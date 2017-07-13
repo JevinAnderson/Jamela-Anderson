@@ -4,6 +4,7 @@ body {
   margin: auto;
   background-color: black;
   color: white;
+  transition: top 0.5s ease;
 }
 
 a {
@@ -20,6 +21,10 @@ a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.navigation {
+  border-bottom: 2px solid #ee699b;
 }
 
 .navigation__anchor {
@@ -49,8 +54,9 @@ a {
   background-position: left top;
   background-attachment: fixed;
   padding: 1rem;
-  height: 600px;
+  height: 250px;
   max-height: 60vh;
+  border-bottom: 2px solid #ee699b;
 }
 
 .hero__header {
@@ -61,7 +67,6 @@ a {
 }
 
 img {
-  max-height: 250px;
   max-width: 100%;
   margin: 1rem auto;
   display: block;
@@ -70,6 +75,7 @@ img {
 .profile-picture {
   border-radius: 50%;
   border: 2px solid #ee699b;
+  max-height: 250px;
 }
 
 .jamela__header,
@@ -116,9 +122,17 @@ img {
   color: white;
 }
 
+.footer {
+  border-top: 2px solid #ee699b;
+}
+
 @media (min-width: 500px) {
   .navigation__anchor {
     display: inline-block;
+  }
+
+  #hero {
+    height: 350px;
   }
 }
 
@@ -148,5 +162,13 @@ img {
   #hero {
     background-position: center top;
     background-size: contain;
+  }
+}
+
+@media (min-width: 1600px) {
+  #hero {
+    background-position: center top;
+    background-size: contain;
+    height: 550px;
   }
 }
