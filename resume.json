@@ -1,0 +1,159 @@
+{
+  "basics": {
+    "name": "Jamela Anderson",
+    "label": "Registered Nurse (BSN)",
+    "picture": "",
+    "email": "jamelabarry@hotmail.com",
+    "phone": "(314) 827-8883",
+    "website": "http://www.jamelaanderson.com/",
+    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "location": {
+      "address": "11 Ivanhoe Ct",
+      "postalCode": "94549",
+      "city": "Lafayette",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "JamelaAnderson",
+        "url": ""
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Various",
+      "position": "Travel Nurse",
+      "website": "http://piedpiper.com",
+      "startDate": "2016-01-01",
+      "summary": "Provided healthcare on telemetry, acute rehab, oncology, and medical surgical floors.",
+      "highlights": [
+        "Adapted quickly to new environments and short orientations",
+        "Communicated well with treatment team",
+        "Involved patient, family, and treatment team in plan of care"
+      ]
+    },
+    {
+      "company": "St. Joseph Healthcare",
+      "position": "Orth and Med/Tele Nurse",
+      "website": "http://www.ssmhealth.com/stjoseph",
+      "startDate": "2014-07-01",
+      "endDate": "2015-12-01",
+      "highlights": [
+        "Managed the unit as a fill in charge nurse",
+        "Educated patients on steps to manage pain and post-treatment home care",
+        "Performed dressing changes and removal of drains",
+        "Taught patients how to improve their mobility and promote healing",
+        "Monitored telemetry patients and read strips"
+      ]
+    },
+    {
+      "company": "University of Missouri Hospital",
+      "position": "Nurse",
+      "startDate": "2013-08-01",
+      "endDate": "2014-07-01",
+      "highlights": [
+        "Embodied the hospitals mission to care, deliver, innovate, serve",
+        "Collaborated with a multidisciplinary team to provide the patient with quality care and ensure patient satisfaction",
+        "Educated patients and family on medical condition, medications, and interventions to prevent future hospitalizations",
+        "Assess the patient’s physical, psychological, and social needs.",
+        "Set goals for the patient and planned nursing interventions to ensure the patient met set goals"
+      ]
+    },
+    {
+      "company": "University of Missouri, Disability Services",
+      "position": "Office Assistant",
+      "startDate": "2008-10-01",
+      "endDate": "2013-07-01",
+      "highlights": [
+        "Communicated with special needs students about testing accommodations",
+        "Counseled students with special needs about receiving disability services",
+        "Proctored exams and performed secretarial duties"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "CoderDojo",
+      "position": "Teacher",
+      "website": "http://coderdojo.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Global movement of free coding clubs for young people.",
+      "highlights": ["Awarded 'Teacher of the Month'"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Missouri",
+      "area": "Biology",
+      "studyType": "Bachelor of Arts",
+      "startDate": "2008-01-01",
+      "endDate": "2012-05-01"
+    },
+     {
+      "institution": "University of Missouri",
+      "area": "Nursing",
+      "studyType": "Bachelor of Science",
+      "startDate": "2012-08-01",
+      "endDate": "2013-07-01"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Digital Compression Pioneer Award",
+      "date": "2014-11-01",
+      "awarder": "Techcrunch",
+      "summary": "There is no spoon."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Video compression for 3d media",
+      "publisher": "Hooli",
+      "releaseDate": "2014-10-01",
+      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "name": "Compression",
+      "level": "Master",
+      "keywords": ["Mpeg", "MP4", "GIF"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Regina Holmes",
+      "reference": "Registered Nurse, (808)649-8303"
+    },
+    {
+      "name": "Emily Pearson",
+      "reference": "Charge Nurse at St. Joseph Health, (314)703-4471"
+    },
+    {
+      "name": "Jahyra Castro",
+      "reference": "Charge Nurse, (928)336-1148"
+    }
+  ]
+}
