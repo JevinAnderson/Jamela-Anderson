@@ -80,6 +80,7 @@
         </div>
     </div>
   </section>
+  <section id="photos"></section>
   <footer class="footer">
     <div class="constrained">
       <a href="mailto:jamelabarry@hotmail.com" class="contact">
@@ -101,6 +102,25 @@
         scrollTop: $(selector).offset().top
       }, 600);
     })
+
+    function shuffle(array) {
+      for (var index = 0; index < array.length; index++) {
+        var random = Math.floor(Math.random() * array.length);
+        var temp = array[index];
+        array[index] = array[random];
+        array[random] = temp;
+      }
+    }
+
+    var PHOTOS = ["ski-resort.png", "profile.png", "snow-boarding.png", "yosemite.png", "rock-climbing.png", "mountain.png"];
+
+    function addPhotos(){
+      PHOTOS.forEach(function(photo) {
+        $('#photos').append('<img src="' + photo + '" alt="' + photo.replace('.png', '') + '" class="gallery-photo">')
+      });
+    }
+
+    $(document).ready(addPhotos);
   </script>
 </body>
 
