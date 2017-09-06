@@ -89,8 +89,15 @@ img {
   color: #ee699b;
 }
 
+.half {
+  overflow: hidden;
+}
+
 .blurb {
   margin-bottom: 0.5rem;
+  transition: all 1.9s ease;
+  position: relative;
+  right: 0%;
 }
 
 .resource,
@@ -160,6 +167,10 @@ img {
   #hero {
     background-position: center top;
   }
+
+  .blurb.right {
+    right: calc(100% + 1rem)
+  }
 }
 
 @media (min-width: 1200px) {
@@ -186,5 +197,4 @@ img {
     background-size: contain;
     height: 550px;
   }
-
 }
