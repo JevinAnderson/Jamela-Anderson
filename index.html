@@ -103,13 +103,47 @@
       }, 600);
     })
 
-    $(document).ready(function() {
+    function appendPhotos() {
       var photos = ["ski-resort.png", "profile.png", "snow-boarding.png", "yosemite.png", "rock-climbing.png", "mountain.png"];
 
       photos.forEach(function(photo) {
         $('#photos').append('<img src="' + photo + '" alt="' + photo.replace('.png', '') + '" class="gallery-photo">')
       });
-    });
+    }
+
+    // From: https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+    // and Safari from: https://stackoverflow.com/questions/7944460/detect-safari-browser
+    function getBrowser() {
+      try {
+        if ((!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0) {
+          return 'Opera';
+        }
+
+        if (typeof InstallTrigger !== 'undefined') {
+          return 'Firefox';
+        }
+
+        if (navigator.vendor && navigator.vendor.indexOf('Apple') > -1 && navigator.userAgent && !navigator.userAgent.match('CriOS')) {
+          return 'Safari';
+        }
+
+        if (/*@cc_on!@*/false || !!document.documentMode) {
+          return 'IE';
+        }
+
+        if (!!window.StyleMedia) {
+          return 'Edge';
+        }
+
+        if (!!window.chrome && !!window.chrome.webstore) {
+          return 'Chrome';
+        }
+      } catch (error) {
+        return 'unknown';
+      }
+
+      return 'unknown';
+    }
 
     // From is element visible in viewport: https://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport/7557433#7557433
     function isElementInViewport(el) {
@@ -138,9 +172,19 @@
       });
     }
 
-    $(window).scroll(_.throttle(updateBlurbs, 200));
-    $(document).ready(updateBlurbs);
+    const BROWSER = getBrowser();
+    function browsersMatch(browser){
+      return browser === BROWSER;
+    }
 
+    if(['Firefox', 'Chrome', 'Safari'].some(browsersMatch)) {
+      $(document).ready(updateBlurbs);
+      $(window).scroll(_.throttle(updateBlurbs, 200));
+    }
+
+    if(['Firefox', 'Chrome', 'Edge'].some(browsersMatch)){
+      $(document).ready(appendPhotos);
+    }
   </script>
 </body>
 
